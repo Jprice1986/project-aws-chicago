@@ -45,3 +45,7 @@ value = aws_dynamodb_table.app_table.name
 output "sns_topic_arn" {
 value = aws_sns_topic.alerts.arn
 }
+output "api_url" {
+value = aws_apigatewayv2_api.http_api.api_endpoint
+}
+
