@@ -34,3 +34,14 @@ output "app_security_group_id" {
 output "db_security_group_id" {
   value = aws_security_group.db_sg.id
 }
+output "s3_bucket_name" {
+value = aws_s3_bucket.app_bucket.bucket
+}
+
+output "dynamodb_table_name" {
+value = aws_dynamodb_table.app_table.name
+}
+
+output "sns_topic_arn" {
+value = aws_sns_topic.alerts.arn
+}
